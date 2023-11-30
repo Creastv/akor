@@ -1,0 +1,153 @@
+@import "../../src/css/scss/variable";
+.inwestycja_wraper {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 50px;
+  @media #{$sm} {
+    flex-wrap: wrap;
+  }
+  .col {
+    &:nth-child(1) {
+      width: 40%;
+      @media #{$sm} {
+        width: 100%;
+      }
+    }
+    &:nth-child(2) {
+      width: 70%;
+      @media #{$sm} {
+        width: 100%;
+      }
+    }
+  }
+  .img {
+    align-self: stretch;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    min-height: 520px;
+    height: 120%;
+    @media #{$sm} {
+      min-height: 300px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      -o-object-fit: cover;
+      object-fit: cover;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .content {
+    position: relative;
+    z-index: 2;
+    padding: 20px 50px;
+    background-color: #fff;
+    margin-left: -10%;
+    position: relative;
+    @media #{$sm} {
+      margin-left: 0px;
+      padding: 10px 10px 30px;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 2px;
+      left: 0;
+      top: 0;
+      background-color: $main;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 2px;
+      right: 0;
+      bottom: 0;
+      background-color: $main;
+      @media #{$sm} {
+        width: 100%;
+      }
+    }
+    .number {
+      p {
+        opacity: 0.4;
+        span {
+          font-size: 71px;
+          line-height: 1;
+          font-weight: bold;
+        }
+      }
+    }
+    .bullets {
+      padding: 20px 0 0;
+      @media #{$sm} {
+        padding: 20px;
+      }
+      ul {
+        list-style: none;
+        padding: 0px;
+        display: flex;
+        gap: 10px;
+        @media #{$sm} {
+          flex-wrap: wrap;
+        }
+        li {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          p {
+            font-weight: bold;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .button {
+      text-align: right;
+      @media #{$sm} {
+        text-align: center;
+      }
+      a {
+        text-align: center;
+        width: 200px;
+        @media #{$sm} {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.inwestycja_wraper.right {
+  .col {
+    &:nth-child(1) {
+      width: 40%;
+      order: 2;
+      @media #{$sm} {
+        width: 100%;
+        order: 1;
+      }
+    }
+    &:nth-child(2) {
+      width: 70%;
+      order: 1;
+      @media #{$sm} {
+        width: 100%;
+        order: 2;
+      }
+    }
+  }
+  .content {
+    margin-left: 0;
+    margin-right: -10%;
+    @media #{$sm} {
+      margin-right: 0;
+    }
+  }
+}

@@ -288,6 +288,29 @@ function register_acf_block_types() {
             wp_enqueue_style( 'go-block-bullety-inwestycji',  get_template_directory_uri() . '/blocks/bullety-inwestycji/block-bullety-inwestycji.min.css' );
         },
     ));
+
+    acf_register_block_type(array(
+        'name'              => 'inwestycja',
+        'title'             => __('Inwestycja'),
+        'render_template'   => 'blocks/inwestycja/inwestycja.php',
+        'category'          => 'formatting',
+        'icon' => array(
+          'background' => '#122b4f',
+          'foreground' => '#fff',
+          'src' => 'ellipsis',
+        ),
+        'mode'            => 'preview', 
+        'keywords'          => array( 'block-inwestycja' ),
+        'supports'		=> [
+            'align'			=> true,
+            'anchor'		=> false,
+            'customClassName'	=> true,
+            'jsx' 			=> true,
+          ],
+        'enqueue_assets'    => function(){
+            wp_enqueue_style( 'go-block-inwestycja',  get_template_directory_uri() . '/blocks/inwestycja/inwestycja.min.css' );
+        },
+    ));
     //  acf_register_block_type(array(
     //     'name'              => 'list',
     //     'title'             => __('List'),
