@@ -1,0 +1,130 @@
+@import "../../src/css/scss/variable";
+.hero {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  margin-left: -50vw;
+  //   height: 100%;
+  .swiper-pagination {
+    text-align: right;
+    height: 100%;
+    width: 21px;
+    right: 30px;
+    left: initial;
+    top: 50%;
+    .swiper-pagination-bullet {
+      width: 22px;
+      height: 22px;
+      margin: 5px;
+      border: 1px solid #fff;
+      background: none;
+      opacity: 1;
+      @media #{$sm} {
+        width: 15px;
+        height: 15px;
+      }
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $main;
+    }
+  }
+}
+
+.inw-carousel {
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bg {
+    height: calc(100vh - 200px);
+    min-height: 600px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(227deg, rgba(0, 0, 0, 0.2637429971988795) 0%, rgba(0, 0, 0, 0.4430147058823529) 100%);
+    .badge-slider {
+      margin-bottom: 100px;
+      margin-bottom: 5w;
+      span {
+        color: #fff;
+        &:nth-child(1) {
+          font-size: 150px;
+          font-size: 15vw;
+          line-height: 130px;
+          line-height: 11vw;
+          font-weight: bold;
+          display: block;
+          @media #{$sm} {
+            font-size: 25vw;
+            line-height: 20vw;
+          }
+        }
+        &:nth-child(2) {
+          font-size: 50px;
+          font-size: 5vw;
+          font-weight: bold;
+          text-transform: uppercase;
+          display: block;
+          @media #{$sm} {
+            font-size: 9vw;
+          }
+        }
+      }
+    }
+    .copy {
+      position: absolute;
+      bottom: 50px;
+      z-index: 333;
+      width: 100%;
+
+      .copy__wraper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        @media #{$sm} {
+          flex-wrap: wrap;
+        }
+      }
+      .title {
+        font-size: 72px;
+        margin-bottom: 15px;
+        color: #fff;
+        @media #{$md} {
+          font-size: 41px;
+        }
+      }
+      p {
+        font-size: 24px;
+        margin-bottom: 0px;
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        @media #{$sm} {
+          font-size: 16px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .btn-slider {
+        margin-bottom: 15px;
+        a {
+          display: flex;
+          align-items: center;
+        }
+        span {
+          //   display: block;
+          color: #fff;
+          font-size: 14px;
+          margin-right: 25px;
+          padding: 15px 0;
+          border-bottom: 1px solid #fff;
+        }
+        svg {
+          //   @media #{$sm} {
+          width: 50px;
+          height: 50px;
+          //   }
+        }
+      }
+    }
+  }
+}

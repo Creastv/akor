@@ -1,0 +1,91 @@
+{
+    "key": "group_6453b96813dfd",
+    "title": "B:slider post",
+    "fields": [
+        {
+            "key": "field_6453b968cea73",
+            "label": "Typ treści",
+            "name": "typ_tresci",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inw-zrealizowane": "Inwestycje zrealizowane",
+                "inwestycje": "Inwestycje",
+                "post": "post"
+            },
+            "default_value": "inw-zrealizowane : Inwestycje zrealizowane",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6454a334325b9",
+            "label": "Ilość wyświetlanych postów (-1 - wszystkie posty)",
+            "name": "ilosc_wyswietlanych_postow",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": -1,
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6453b9c38bbbf",
+            "label": "Inf",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Wszystkie artykuły są zaciągane dynamicznie.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/slider-post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1701082971
+}

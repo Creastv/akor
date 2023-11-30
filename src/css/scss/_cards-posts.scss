@@ -1,0 +1,108 @@
+.post-inw {
+  position: relative;
+  margin-bottom: 70px;
+  transition: all 0.3s linear;
+  a {
+    overflow: hidden;
+    display: block;
+    img {
+      width: 100%;
+      height: auto;
+      transition: all 0.3s linear;
+    }
+  }
+  .wraper {
+    position: absolute;
+    bottom: -50px;
+    background-color: #fff;
+    width: 70%;
+    padding: 20px;
+    .entry-title {
+      font-size: 26px;
+      a {
+        color: $black;
+        transition: all 0.3s linear;
+      }
+    }
+    .entry-content {
+      ul {
+        list-style: none;
+        padding: 0px;
+        margin-bottom: 30px;
+        li {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  &:hover {
+    transform: translate(0, -10px);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+    .wraper {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+      .entry-title {
+        a {
+          color: $main;
+        }
+      }
+    }
+    a {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.post-item {
+  transition: all 0.3s linear;
+  header {
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: all 0.3s linear;
+    }
+  }
+  .content {
+    padding: 20px;
+    width: 100%;
+  }
+  .entry-title {
+    font-size: 26px;
+    transition: all 0.3s linear;
+    a {
+      color: $black;
+      transition: all 0.3s linear;
+    }
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    @media #{$lg} {
+      line-height: 16px;
+      font-size: 12px;
+    }
+  }
+
+  &:hover {
+    transform: translate(0, -10px);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+    .wraper {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+      .entry-title {
+        a {
+          color: $main;
+        }
+      }
+    }
+    a {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

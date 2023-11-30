@@ -1,0 +1,130 @@
+.f-form {
+  margin-top: 50px;
+  padding: 50px 0;
+  background-color: #f4f4f4;
+  .f-form__wrap {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    .header {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.form-wraper {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  // @media #{$sm} {
+  //   padding: 0 15px 50px 15px;
+  // }
+  .btn {
+    @media #{$sm} {
+      display: block;
+      width: 100%;
+      padding: 10px 20px;
+    }
+  }
+}
+.control-wrap {
+  display: flex;
+  gap: 15px;
+  @media #{$sm} {
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+}
+
+.form-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+  @media #{$sm} {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.form-group .wpcf7-form-control-wrap {
+  width: 100%;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+.form-group .form-control:focus {
+  box-shadow: 0 0 0px 2px rgba($main, 0.51);
+  border: 1px solid $main;
+}
+.col-1 {
+  width: 100%;
+}
+.col-2 {
+  width: 50%;
+  @media #{$sm} {
+    width: 100%;
+  }
+}
+.ch {
+  .wpcf7-list-item-label {
+    font-size: 12px;
+    // margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  label {
+    margin-left: 0px;
+  }
+}
+label {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  sup {
+    color: red;
+    margin-left: 10px;
+  }
+}
+input {
+  min-height: 55px;
+  background-color: #ffff;
+  border: none;
+  border-bottom: 2px solid $main;
+
+  padding: 10px;
+  width: 100%;
+  outline: 0;
+}
+textarea {
+  min-height: 55px;
+  background-color: #fff;
+  border: none;
+  border-bottom: 2px solid $main;
+  padding: 10px;
+  width: 100%;
+  outline: 0;
+}
+.ch input {
+  width: 20px;
+  min-height: initial;
+}
+.wpcf7-submit {
+  background-color: $main;
+  width: initial;
+  padding: 10px 30px;
+  color: #fff;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+.wpcf7-not-valid-tip {
+  color: #dc3232;
+  font-size: 0.7em;
+  font-weight: normal;
+  display: block;
+  margin-top: 10px;
+}
+
+.wpcf7-spinner {
+  position: absolute;
+}

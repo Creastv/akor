@@ -1,0 +1,27 @@
+.btn {
+  display: inline-block;
+  transition: all 0.3s linear;
+  border: 1px solid $main;
+  color: #fff;
+  padding: 10.5px 10px;
+  background-color: $main;
+  border: 1px solid $main;
+
+  &:hover {
+    background-color: transparent;
+    color: $main;
+  }
+}
+
+.btn-revers {
+  display: inline-block;
+  transition: all 0.3s linear;
+  border: 1px solid $main;
+  color: $main;
+  padding: 10.5px 10px;
+
+  &:hover {
+    background-color: $main;
+    color: #fff;
+  }
+}

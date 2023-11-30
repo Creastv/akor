@@ -1,0 +1,47 @@
+@import "../../src/css/scss/variable";
+// @import "../../src/css/sass/_mixins.scss";
+.bullets-inwestycji {
+  padding: 50px 0;
+  @media #{$sm} {
+    padding: 15px 0px;
+  }
+  .full {
+    .wraper {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0;
+      li {
+        text-align: center;
+        width: 25%;
+        padding: 20px;
+        @media #{$sm} {
+          width: 33.333%;
+          margin: 0px 0;
+        }
+        @media #{$xs} {
+          width: 50%;
+          margin: 0px 0;
+        }
+        img {
+          margin: 0 auto;
+          margin-bottom: 25px;
+        }
+        p {
+          text-transform: uppercase;
+          margin-bottom: 0;
+          line-height: inherit;
+          font-size: 21px;
+          line-height: 28px;
+          @media #{$sm} {
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}

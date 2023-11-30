@@ -1,0 +1,12 @@
+.container-full {
+  position: relative;
+}
+.container-full .bg {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0;
+  width: 100vw !important;
+  margin-left: -50vw !important;
+  left: 50% !important;
+}/*# sourceMappingURL=container-full.css.map */

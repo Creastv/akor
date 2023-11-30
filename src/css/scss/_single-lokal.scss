@@ -1,0 +1,238 @@
+.single-lokal {
+  .entry-header {
+    text-align: center;
+    padding: 50px 0 0 0;
+  }
+  .l-info {
+    margin-bottom: 50px;
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      @media #{$sm} {
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+      li {
+        @media #{$sm} {
+          width: calc(50% - 20px);
+        }
+        p {
+          margin-bottom: 0px;
+        }
+        span {
+          @media #{$sm} {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .l-action__wrap {
+    display: flex;
+    border: 1px solid $light;
+    margin-bottom: 50px;
+    @media #{$sm} {
+      flex-wrap: wrap;
+    }
+    .col {
+      width: 50%;
+      position: relative;
+      @media #{$sm} {
+        width: 100%;
+      }
+      &:nth-child(2) {
+        &:before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-color: $light;
+        }
+      }
+    }
+  }
+  .l-form {
+    background-color: $light;
+    padding: 50px;
+    @media #{$sm} {
+      padding: 20px;
+    }
+    .l-form-header {
+      margin-bottom: 20px;
+    }
+  }
+  .col_wrap {
+    padding: 20px;
+    position: relative;
+    height: 100%;
+    @media #{$sm} {
+      padding: 0px;
+    }
+    .galleria {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .back {
+    position: absolute;
+    transform: translate(0, 30px);
+    @media #{$sm} {
+      transform: translate(0, 0px);
+    }
+    a {
+      padding: 10px;
+      text-align: center;
+      display: block;
+      span {
+        display: block;
+      }
+      path {
+        fill: $main;
+      }
+      &:hover {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+/* Hide the images by default */
+.galleria {
+  position: relative;
+
+  .slides {
+    display: none;
+  }
+
+  .slides img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (max-width: 600px) {
+    .prevContainer,
+    .nextContainer {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  .prevContainer,
+  .nextContainer {
+    border: 1px solid $main;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 54px;
+    width: 54px;
+    opacity: 0.4;
+    cursor: pointer;
+    &:hover {
+      background-color: #fff;
+      opacity: 1;
+    }
+  }
+
+  .prevContainer {
+    margin-left: 26px;
+    left: -10px;
+    border-radius: 100px;
+  }
+
+  .prev {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 34px;
+    width: 32px;
+    float: left;
+    margin-left: 12px;
+  }
+
+  .prev svg,
+  .next svg {
+    fill: $main;
+  }
+
+  .nextContainer {
+    margin-right: 26px;
+    right: 0;
+    border-radius: 100px;
+  }
+
+  .next {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 34px;
+    width: 32px;
+    float: right;
+    margin-right: 12px;
+  }
+
+  /* Container for image text */
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Six columns side by side */
+  .thumbnails {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    gap: 10px;
+    @media #{$sm} {
+      flex-wrap: wrap;
+      gap: 0px;
+    }
+
+    .thumbnail {
+      // float: left;
+      width: 200px;
+      @media #{$sm} {
+        width: 25%;
+        padding: 5px;
+      }
+    }
+    .buttons {
+      align-self: center;
+      min-width: 200px;
+      max-width: 200px;
+      @media #{$sm} {
+        min-width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+      }
+      a {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+  /* Add a transparency effect for thumbnail images */
+  .slide-thumbnail {
+    width: 100%;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  .active.slide-thumbnail,
+  .slide-thumbnail:hover {
+    opacity: 1;
+    border: 3px solid $main;
+  }
+}

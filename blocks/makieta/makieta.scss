@@ -1,0 +1,80 @@
+@import "../../src/css/scss/variable";
+.go-makieta {
+  position: relative;
+  margin-bottom: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    // max-width: 100%;
+    // width: 900px;
+    height: auto;
+  }
+  area {
+    cursor: pointer;
+  }
+}
+
+.tooltip-makieta {
+  display: none;
+  position: absolute;
+  z-index: 999;
+
+  > div {
+    opacity: 1;
+    padding: 5px;
+    color: #fff;
+
+    padding: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.12);
+  }
+  > div.Dostępny {
+    background-color: green;
+  }
+  > div.Zarezerwowany {
+    background-color: #1788c9;
+  }
+  > div.Sprzedany {
+    background-color: red;
+    display: none !important;
+  }
+
+  span {
+    display: block;
+    text-align: left;
+    word-wrap: break-word;
+    color: white !important;
+    font-size: 13px !important;
+    line-height: 16px;
+
+    b {
+      font-weight: 500 !important;
+    }
+  }
+  // &:before {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   left: -10px;
+  //   width: 0px;
+  //   height: 0px;
+  //   border-top: 10px solid transparent;
+  //   border-bottom: 10px solid transparent;
+  //   border-right: 10px solid $black;
+  // }
+}
+
+.hasTooltip.disabled {
+  pointer-events: none;
+
+  .tooltip-makieta {
+    display: none !important;
+  }
+}

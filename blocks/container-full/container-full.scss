@@ -1,0 +1,16 @@
+@import "../../src/css/scss/variable";
+
+.container-full {
+  position: relative;
+  .bg {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0;
+    width: 100vw !important;
+    margin-left: -50vw !important;
+    left: 50% !important;
+    // height: 100%;
+    // background-color: rgb(236, 236, 236);
+  }
+}
