@@ -9,7 +9,7 @@
   }
 }
 .inwestycja_wraper .col:nth-child(1) {
-  width: 40%;
+  width: 50%;
 }
 @media only screen and (max-width: 768px) {
   .inwestycja_wraper .col:nth-child(1) {
@@ -17,7 +17,7 @@
   }
 }
 .inwestycja_wraper .col:nth-child(2) {
-  width: 70%;
+  width: 60%;
 }
 @media only screen and (max-width: 768px) {
   .inwestycja_wraper .col:nth-child(2) {
@@ -52,7 +52,8 @@
   position: relative;
   z-index: 2;
   padding: 20px 50px;
-  background-color: #fff;
+  background: rgb(247, 248, 251);
+  background: linear-gradient(43deg, rgb(247, 248, 251) 0%, rgb(255, 255, 255) 100%);
   margin-left: -10%;
   position: relative;
 }
@@ -105,7 +106,7 @@
   list-style: none;
   padding: 0px;
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 @media only screen and (max-width: 768px) {
   .inwestycja_wraper .content .bullets ul {
@@ -140,7 +141,7 @@
 }
 
 .inwestycja_wraper.right .col:nth-child(1) {
-  width: 40%;
+  width: 50%;
   order: 2;
 }
 @media only screen and (max-width: 768px) {
@@ -150,7 +151,7 @@
   }
 }
 .inwestycja_wraper.right .col:nth-child(2) {
-  width: 70%;
+  width: 60%;
   order: 1;
 }
 @media only screen and (max-width: 768px) {
@@ -162,6 +163,8 @@
 .inwestycja_wraper.right .content {
   margin-left: 0;
   margin-right: -10%;
+  background: rgb(247, 248, 251);
+  background: linear-gradient(225deg, rgb(247, 248, 251) 0%, rgb(255, 255, 255) 100%) !important;
 }
 @media only screen and (max-width: 768px) {
   .inwestycja_wraper.right .content {

@@ -8,13 +8,13 @@
   }
   .col {
     &:nth-child(1) {
-      width: 40%;
+      width: 50%;
       @media #{$sm} {
         width: 100%;
       }
     }
     &:nth-child(2) {
-      width: 70%;
+      width: 60%;
       @media #{$sm} {
         width: 100%;
       }
@@ -46,7 +46,8 @@
     position: relative;
     z-index: 2;
     padding: 20px 50px;
-    background-color: #fff;
+    background: rgb(247, 248, 251);
+    background: linear-gradient(43deg, rgba(247, 248, 251, 1) 0%, rgba(255, 255, 255, 1) 100%);
     margin-left: -10%;
     position: relative;
     @media #{$sm} {
@@ -93,7 +94,7 @@
         list-style: none;
         padding: 0px;
         display: flex;
-        gap: 10px;
+        gap: 30px;
         @media #{$sm} {
           flex-wrap: wrap;
         }
@@ -127,7 +128,7 @@
 .inwestycja_wraper.right {
   .col {
     &:nth-child(1) {
-      width: 40%;
+      width: 50%;
       order: 2;
       @media #{$sm} {
         width: 100%;
@@ -135,7 +136,7 @@
       }
     }
     &:nth-child(2) {
-      width: 70%;
+      width: 60%;
       order: 1;
       @media #{$sm} {
         width: 100%;
@@ -146,6 +147,8 @@
   .content {
     margin-left: 0;
     margin-right: -10%;
+    background: rgb(247, 248, 251);
+    background: linear-gradient(225deg, rgba(247, 248, 251, 1) 0%, rgba(255, 255, 255, 1) 100%) !important;
     @media #{$sm} {
       margin-right: 0;
     }
