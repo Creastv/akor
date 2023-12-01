@@ -12,9 +12,8 @@ function enqueue_scripts() {
 	wp_enqueue_script( 'go-lokale-table', get_template_directory_uri() . '/src/js/go-datatable.js', array(), '20130459', true );
 
 	if(is_singular('lokale')) :
-    
-    wp_enqueue_script( 'go-slider', get_template_directory_uri() . '/src/js/go-slider-lokal.js', array(), '20130478', true );
-endif;
+		wp_enqueue_script( 'go-slider', get_template_directory_uri() . '/src/js/go-slider-lokal.js', array(), '20130478', true );
+	endif;
 	wp_enqueue_script('go-main', get_template_directory_uri().'/src/js/go-main.js', array( 'jquery' ),'3', true );
 }
 
