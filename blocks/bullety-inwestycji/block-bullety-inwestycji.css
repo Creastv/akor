@@ -11,17 +11,19 @@
   margin-bottom: 0;
 }
 .bullets-inwestycji .full .wraper li {
+  position: relative;
   text-align: center;
   width: 25%;
   padding: 20px;
+  border-right: 1px solid #f7f8fb;
+  background-color: #fff;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.053);
+}
+.bullets-inwestycji .full .wraper li:first-child, .bullets-inwestycji .full .wraper li:last-child {
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.033);
+  z-index: -1;
 }
 @media only screen and (max-width: 768px) {
-  .bullets-inwestycji .full .wraper li {
-    width: 33.333%;
-    margin: 0px 0;
-  }
-}
-@media only screen and (max-width: 460px) {
   .bullets-inwestycji .full .wraper li {
     width: 50%;
     margin: 0px 0;
@@ -37,6 +39,12 @@
   line-height: inherit;
   font-size: 21px;
   line-height: 28px;
+}
+@media only screen and (max-width: 998px) {
+  .bullets-inwestycji .full .wraper li p {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .bullets-inwestycji .full .wraper li p {

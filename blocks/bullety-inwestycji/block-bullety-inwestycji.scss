@@ -16,17 +16,28 @@
       justify-content: center;
       margin-bottom: 0;
       li {
+        position: relative;
         text-align: center;
         width: 25%;
         padding: 20px;
-        @media #{$sm} {
-          width: 33.333%;
-          margin: 0px 0;
+        border-right: 1px solid $light;
+        background-color: #fff;
+        // background: #f7f8fb;
+        // background: linear-gradient(43deg, rgb(24, 44, 104, 0.05) 0%, rgb(255, 255, 255) 100%);
+        box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.053);
+        &:first-child,
+        &:last-child {
+          box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.033);
+          z-index: -1;
         }
-        @media #{$xs} {
+        @media #{$sm} {
           width: 50%;
           margin: 0px 0;
         }
+        // @media #{$xs} {
+        //   width: 50%;
+        //   margin: 0px 0;
+        // }
         img {
           margin: 0 auto;
           margin-bottom: 25px;
@@ -37,6 +48,10 @@
           line-height: inherit;
           font-size: 21px;
           line-height: 28px;
+          @media #{$md} {
+            font-size: 18px;
+            line-height: 22px;
+          }
           @media #{$sm} {
             font-size: 16px;
             line-height: 22px;
