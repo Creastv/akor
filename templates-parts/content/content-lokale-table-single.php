@@ -91,9 +91,6 @@ if(  $typ->name == "Dom" ) {
         <p class="title-local"><?php the_title(); ?></p>
         <div class="xs-display">
             <a href="#" class="opener-form" data-id="<?php the_ID(); ?>" data-titlelocal="<?php the_title(); ?>" ><?php echo $tekstButton; ?></a>
-            <?php if($pdfRzut) { ?>
-            <a href="<?php echo $pdfRzut; ?>"  target="_blank">Pobierz PDF ></a>
-            <?php } ?>
         </div>
     </td>
     <td>
@@ -146,8 +143,6 @@ if(  $typ->name == "Dom" ) {
 
     <td>
         <a href="<?php the_permalink(); ?>" class="btn"><?php echo $tekstButton; ?></a>
-        <?php if($pdfRzut) { ?>
-        <a href="<?php echo $pdfRzut; ?>"  target="_blank">Pobierz PDF ></a>
-        <?php } ?>
+        
     </td>
 </tr>
