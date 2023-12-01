@@ -99,37 +99,17 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33.333",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
             "min": "",
             "max": "",
-            "step": "",
             "placeholder": "",
+            "step": "",
             "prepend": "",
             "append": ""
-        },
-        {
-            "key": "field_653a16e11e8dc",
-            "label": "Wyświetlać cenę",
-            "name": "wyswietlac_cene",
-            "aria-label": "",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "33.333",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 1,
-            "ui_on_text": "",
-            "ui_off_text": "",
-            "ui": 1
         },
         {
             "key": "field_64550a22119ca",
@@ -141,7 +121,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33.333",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -218,74 +198,6 @@
                     "prepend": "",
                     "append": "",
                     "parent_repeater": "field_645b944bafaa2"
-                }
-            ]
-        },
-        {
-            "key": "field_64d36e98ab376",
-            "label": "Dodatkowe info",
-            "name": "dodatkowe_info",
-            "aria-label": "",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "layout": "table",
-            "pagination": 0,
-            "min": 0,
-            "max": 0,
-            "collapsed": "",
-            "button_label": "Dodaj wiersz",
-            "rows_per_page": 20,
-            "sub_fields": [
-                {
-                    "key": "field_64d36e98ab377",
-                    "label": "Nazwa",
-                    "name": "nazwa",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_64d36e98ab376"
-                },
-                {
-                    "key": "field_64d36e98ab378",
-                    "label": "Rozmiar",
-                    "name": "rozmiar_w_m2",
-                    "aria-label": "",
-                    "type": "number",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "min": "",
-                    "max": "",
-                    "placeholder": "",
-                    "step": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_64d36e98ab376"
                 }
             ]
         },
@@ -381,11 +293,11 @@
             "mime_types": ""
         },
         {
-            "key": "field_645b62d379e8b",
-            "label": "Rzut 3D PDF  - link w tabeli",
-            "name": "rzut_3d",
+            "key": "field_65672ee750332",
+            "label": "Inwestycja",
+            "name": "inwestycja",
             "aria-label": "",
-            "type": "file",
+            "type": "post_object",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -394,51 +306,145 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "url",
-            "library": "all",
-            "min_size": "",
-            "max_size": "",
-            "mime_types": ""
+            "post_type": [
+                "inwestycje"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "return_format": "object",
+            "multiple": 0,
+            "allow_null": 0,
+            "bidirectional": 0,
+            "ui": 1,
+            "bidirectional_target": []
         },
         {
-            "key": "field_65365fa1f7114",
-            "label": "Rzut 3D PDF   - miniaturki (tabela, kafelki)",
-            "name": "rzut_3d_img",
+            "key": "field_6568608d456e7",
+            "label": "Galeria",
+            "name": "",
             "aria-label": "",
-            "type": "file",
+            "type": "tab",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "",
                 "class": "",
                 "id": ""
             },
-            "return_format": "url",
-            "library": "all",
-            "min_size": "",
-            "max_size": "",
-            "mime_types": ""
+            "placement": "top",
+            "endpoint": 0
         },
         {
-            "key": "field_64d24c79f70df",
-            "label": "Spacer wirtualny",
-            "name": "spacer_wirtualny",
+            "key": "field_6568609c456e8",
+            "label": "Galeria",
+            "name": "galeria",
             "aria-label": "",
-            "type": "text",
+            "type": "gallery",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "",
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "return_format": "array",
+            "library": "all",
+            "min": 1,
+            "max": 4,
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "insert": "append",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_6569a71cf805d",
+            "label": "Podstrona Lokalu",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6569a734f805e",
+            "label": "Dodatkowe info",
+            "name": "dodatkowe_info",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Dodaj wiersz",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6569a741f805f",
+                    "label": "Tytuł",
+                    "name": "tytul",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6569a734f805e"
+                },
+                {
+                    "key": "field_6569a749f8060",
+                    "label": "Treść",
+                    "name": "tresc",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6569a734f805e"
+                }
+            ]
         }
     ],
     "location": [
@@ -459,5 +465,5 @@
     "active": true,
     "description": "extras",
     "show_in_rest": 1,
-    "modified": 1698305829
+    "modified": 1701422935
 }

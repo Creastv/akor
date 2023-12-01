@@ -1,5 +1,5 @@
 <div class="f__info">
-    <p><small>Copyright ©  2023 All Rights Reserved Akor - Development Group | made by </small> <a href="https://roial.pl/" traget="_blank">
+    <p><small>Copyright ©  2023 All Rights Reserved Akor - Development Group | made by </small> <a href="https://regalestate.pl/" traget="_blank">
 	
 		<svg width="35" height="14" id="Warstwa_1" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160.48 73.11">
 
