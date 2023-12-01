@@ -1,10 +1,5 @@
 .bullets-inwestycji {
-  padding: 50px 0;
-}
-@media only screen and (max-width: 768px) {
-  .bullets-inwestycji {
-    padding: 15px 0px;
-  }
+  margin-bottom: 50px;
 }
 .bullets-inwestycji .full .wraper {
   padding: 0;
