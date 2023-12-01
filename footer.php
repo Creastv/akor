@@ -36,6 +36,9 @@
 </span>
 
 <?php wp_footer(); ?>
+<script>
+jQuery(".wp-block-gallery .wp-block-image a").fancybox();  
 
+</script>
 </body>
 </html>

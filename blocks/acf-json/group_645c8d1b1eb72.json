@@ -21,8 +21,9 @@
             "save_terms": 0,
             "load_terms": 0,
             "return_format": "object",
-            "field_type": "select",
+            "field_type": "multi_select",
             "allow_null": 0,
+            "bidirectional": 0,
             "multiple": 0,
             "bidirectional_target": []
         }
@@ -45,5 +46,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1701083309
+    "modified": 1701410067
 }

@@ -1,22 +1,25 @@
 <?php 
 $inw = get_field( 'lokale' );
-
+$tax = array();
+foreach($inw as $item){
+ $tax[] = $item->slug;
+}
     $postsPerPage = 4;
      $table = array(
         'post_type' => 'lokale',
         'post_status' => 'publish',
         'posts_per_page' => -1,
-        // 'meta_key'       => 'status', // Klucz pola ACF
-        // 'orderby'        => 'meta_value_num', 
+        'meta_key'       => 'status', // Klucz pola ACF
+        'orderby'        => 'meta_value_num', 
         'order'          => 'ASC', 
-        // 'tax_query' =>  array (
-        //     array(
-        //         'taxonomy' => 'inwestycje',
-        //         'terms' => $inw->slug, 
-        //         'field' => 'slug',
-        //         'operator' => 'IN',
-        //     ),
-        // ), 
+        'tax_query' =>  array (
+            array(
+                'taxonomy' => 'inwestycje',
+                'terms' => $tax, 
+                'field' => 'slug',
+                'operator' => 'IN',
+            ),
+        ), 
     );
 $loop = new WP_Query($table);
 ?>
