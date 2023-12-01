@@ -8,6 +8,7 @@ $floor = get_field( 'pietro' );
 $gellery = get_field( 'galeria' );
 
 $extras = get_field( 'dodatkowe_info' );
+$pdf = get_field( 'rzut_pdf');
 
 ?>
 
@@ -141,9 +142,11 @@ $extras = get_field( 'dodatkowe_info' );
                                     <img class="slide-thumbnail" src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" onclick="currentSlide(<?php echo $i; ?>)" >
                                 </div>
                             <?php $i++;  endforeach; ?>
-                                <div class="buttons text-right">
-                                    <a href="#" class="btn-revers">Pobierz PDF</a>
-                                </div>
+                            <?php if($pdf) : ?>
+                            <div class="buttons text-right">
+                                <a href="<?php echo $pdf; ?>" target="_blank" class="btn-revers">Pobierz PDF</a>
+                            </div>
+                            <?php endif ?>
                             </div>
                         <?php else : ?>
                             <?php if ( has_post_thumbnail()  )  : ?>
@@ -151,9 +154,11 @@ $extras = get_field( 'dodatkowe_info' );
                             <?php else: ?>
                                 <img src="<?php echo get_template_directory_uri()."/src/img/thumbnail.png"; ?>" width="400" height="250" alt="<?php the_title(); ?>">
                             <?php endif; ?>
+                            <?php if($pdf) : ?>
                             <div class="buttons text-right">
-                                <a href="#" class="btn-revers">Pobierz PDF</a>
+                                <a href="<?php echo $pdf; ?>" target="_blank" class="btn-revers">Pobierz PDF</a>
                             </div>
+                            <?php endif ?>
                         <?php endif; ?>
                     </div>
                 </div>
