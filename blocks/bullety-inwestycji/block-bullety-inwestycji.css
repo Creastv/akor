@@ -17,10 +17,8 @@
   padding: 20px;
   border-right: 1px solid #f7f8fb;
   background-color: #fff;
-  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.053);
 }
 .bullets-inwestycji .full .wraper li:first-child, .bullets-inwestycji .full .wraper li:last-child {
-  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.033);
   z-index: -1;
 }
 @media only screen and (max-width: 768px) {
