@@ -13,7 +13,7 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("slides");
   var dots = document.getElementsByClassName("slide-thumbnail");
-  var captionText = document.getElementById("caption");
+  // var captionText = document.getElementById("caption");
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -32,5 +32,5 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   // slides[slideIndex-1].style.display = "inline";
   dots[slideIndex - 1].className += " active";
-  captionText.innerHTML = dots[slideIndex - 1].alt;
+  // captionText.innerHTML = dots[slideIndex - 1].alt;
 }

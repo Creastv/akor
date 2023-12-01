@@ -37,7 +37,11 @@
 
 <?php wp_footer(); ?>
 <script>
-jQuery(".wp-block-gallery .wp-block-image a").fancybox();  
+const img = document.querySelectorAll(".wp-block-gallery .wp-block-image a");
+
+for(let i=0; i < img.length; i++){
+    img[i].setAttribute('data-fancybox', 'wp-gallery-fancybox');
+}
 
 </script>
 </body>

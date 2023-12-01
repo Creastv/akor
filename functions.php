@@ -212,5 +212,3 @@ function is_post_type($type){
         return true;
     return false;
 }
-
-
