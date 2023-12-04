@@ -95,7 +95,8 @@
   font-weight: bold;
 }
 .inwestycja_wraper .content .bullets {
-  padding: 20px 0 0;
+  padding: 20px 0;
+  margin-bottom: 20px;
 }
 @media only screen and (max-width: 768px) {
   .inwestycja_wraper .content .bullets {
