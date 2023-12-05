@@ -76,8 +76,9 @@
       .item {
         p {
           font-family: "Lora", serif;
-          font-size: 2.5vw;
-          margin-bottom: 0;
+          font-size: 2vw;
+          line-height: 1;
+          margin-bottom: 15px;
           color: $main;
           @media #{$sm} {
             font-size: 21px;

@@ -80,8 +80,9 @@
 }
 .atuty .atuty__wrap .atuty__items .item p {
   font-family: "Lora", serif;
-  font-size: 2.5vw;
-  margin-bottom: 0;
+  font-size: 2vw;
+  line-height: 1;
+  margin-bottom: 15px;
   color: #0e4382;
 }
 @media only screen and (max-width: 768px) {
