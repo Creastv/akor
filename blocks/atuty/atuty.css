@@ -88,4 +88,7 @@
   .atuty .atuty__wrap .atuty__items .item p {
     font-size: 21px;
   }
+}
+.atuty .atuty__wrap .atuty__items .item p small {
+  font-size: 1.5vw;
 }/*# sourceMappingURL=atuty.css.map */

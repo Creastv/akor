@@ -82,6 +82,9 @@
           @media #{$sm} {
             font-size: 21px;
           }
+          small {
+            font-size: 1.5vw;
+          }
         }
       }
     }
