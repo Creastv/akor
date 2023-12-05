@@ -203,12 +203,23 @@ function cmplz_reload_after_consent() {
 }
 add_action( 'wp_footer', 'cmplz_reload_after_consent' );
 
-
-
-
 function is_post_type($type){
     global $wp_query;
     if($type == get_post_type($wp_query->post->ID)) 
         return true;
     return false;
 }
+
+
+function cf7_add_extras( $fields ) {
+	$contact_form = WPCF7_ContactForm::get_current();
+    $contact_form_id = $contact_form -> id;
+	  $post = get_post();
+      return array_merge( $fields, array(
+        'post_title' => get_the_title()
+      )
+	  );
+}
+add_filter( 'wpcf7_form_hidden_fields', 'cf7_add_extras' );
+
+add_filter('wpcf7_spam', function() { return false; });
