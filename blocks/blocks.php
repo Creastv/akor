@@ -19,6 +19,23 @@ function register_acf_block_types() {
       },
     ));
      acf_register_block_type(array(
+        'name'              => 'atuty',
+        'title'             => __('Atuty'),
+        'render_template'   => 'blocks/atuty/atuty.php',
+        'category'          => 'formatting',
+        'icon' => array(
+          'background' => '#122b4f',
+          'foreground' => '#fff',
+          'src' => 'ellipsis',
+        ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'atuty' ),
+      'supports' => array( 'align' =>false ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-atuty',  get_template_directory_uri() . '/blocks/atuty/atuty.min.css' );
+      },
+    ));
+     acf_register_block_type(array(
         'name'              => 'container-full',
         'title'             => __('Kontener - tło'),
         'render_template'   => 'blocks/container-full/container-full.php',

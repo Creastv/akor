@@ -1,0 +1,89 @@
+@import "../../src/css/scss/variable";
+
+.atuty {
+  padding: 50px;
+  background-color: $light;
+  margin-bottom: 50px;
+  .atuty__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @media #{$md} {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .col {
+      &:nth-child(1) {
+        width: 30%;
+        @media #{$md} {
+          width: 100%;
+        }
+      }
+      &:nth-child(2) {
+        width: 60%;
+        @media #{$md} {
+          width: 100%;
+        }
+      }
+    }
+    .atut-title {
+      position: relative;
+      margin-left: 50px;
+      font-size: 41px;
+      @media #{$sm} {
+        text-align: center;
+        font-size: 31px;
+        // display: inline-block;
+      }
+      span {
+        font-size: 150px;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        line-height: 0;
+        // left: 0;
+        transform: translate(-50px, -50%);
+        opacity: 0.2;
+        @media #{$sm} {
+          font-size: 100px;
+        }
+      }
+    }
+    .atuty__items {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .item {
+        padding: 20px;
+        width: 50%;
+        &:nth-child(1),
+        &:nth-child(3) {
+          text-align: right;
+          border-right: 1px solid $main;
+        }
+        &:nth-child(1) {
+          border-bottom: 1px solid $main;
+        }
+        &:nth-child(2),
+        &:nth-child(4) {
+          text-align: left;
+        }
+        &:nth-child(2) {
+          text-align: left;
+          border-bottom: 1px solid $main;
+        }
+      }
+      .item {
+        p {
+          font-family: "Lora", serif;
+          font-size: 2.5vw;
+          margin-bottom: 0;
+          color: $main;
+          @media #{$sm} {
+            font-size: 21px;
+          }
+        }
+      }
+    }
+  }
+}
