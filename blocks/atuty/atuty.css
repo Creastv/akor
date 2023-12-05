@@ -59,6 +59,16 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  position: relative;
+}
+.atuty .atuty__wrap .atuty__items::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background-color: #0e4382;
 }
 .atuty .atuty__wrap .atuty__items .item {
   padding: 20px;

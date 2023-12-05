@@ -15,6 +15,7 @@ $atuty4 = get_field( 'atut_4' );
                 <?php if($atuty1) : ?>
                 <div class="item">
                     <?php echo $atuty1['numer'] ? '<p>' . $atuty1['numer'] . '</p>' : false; ?>
+                    <br>
                     <?php echo $atuty1['opis'] ? '<span>' . $atuty1['opis'] . '</span>' : false; ?>
                 </div>
                 <?php endif; ?>
