@@ -10,7 +10,7 @@
                 <h2>Zapraszamy do kontaktu</h2>
                 <p>Szukasz swojego wymarzonego mieszkania lub domu.
     Skontaktuj się z nami za pośrednictwem formularza kontaktowego,
-    oddzwonimy do Ciebie e ciągu 24 godz.</p>
+    oddzwonimy do Ciebie w ciągu 24 godz.</p>
             </div>
             <div class="form__wrap">
                 <?php echo do_shortcode('[contact-form-7 id="258d77a" title="Formularz 1"]');?>
